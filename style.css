@@ -2,10 +2,10 @@ body{
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
-    background-image: url("image/pattern-color.png");
+    background-image: linear-gradient(to right, #927ec6, #8f86cd, #8d8ed4, #8a96da, #889ee0, #889ee0, #889ee0, #889ee0, #8a96da, #8d8ed4, #8f86cd, #927ec6);
 }
 body.active{
-    background-image: url("image/pattern.png");
+    background-image: linear-gradient(to right, #4d4351, #4f4756, #524a5b, #534e61, #555266, #555266, #555266, #555266, #534e61, #524a5b, #4f4756, #4d4351);
 }
 /* Theme button */
 #toggle{
@@ -79,7 +79,8 @@ div#Name{
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: 2px 2px 0px rgb(13, 71, 161);
+    text-shadow: 1px 1px 0px #ba83ca,
+        2px 2px 0px #d16ba5;
 }
 div#Description{
     text-align: center;
@@ -87,9 +88,9 @@ div#Description{
     font-size: 40px;
     color: rgba(255, 255, 255);
     font-weight: 500;
-    text-shadow: -1px -1px 0px cornflowerblue,
-        1px 1px 0px cornflowerblue,
-        2px 2px 0px rgb(13, 71, 161);
+    text-shadow: -1px -1px 0px #c777b9,
+        1px 1px 0px #c777b9,
+        2px 2px 0px #d16ba5;
 }
 a.Tag{
     position: relative;
@@ -99,7 +100,7 @@ a.Tag{
     height: 100px;
     margin: 20px auto;
     border-radius: 10px;
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(34, 34, 34, 0.5);
     text-decoration: none;
     transition: all .1s linear;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
@@ -153,7 +154,7 @@ div#Credit2>a:hover{
 /* Information Card when change theme */
 body.active a.Tag{
     border: 1px solid darkgrey;
-    background-color:rgba(50, 50, 50, 0.9);
+    background-color:rgba(50, 50, 50, 0.4);
 }
 body.active a.Tag:active{
     box-shadow: 0 0 80px rgba(255, 255, 255);
@@ -162,10 +163,12 @@ body.active a.Tag>div{
     color: darkgrey;
 }
 body.active div#Name{
-    color: #aa8fd8;
+    color: #BFFCF9;
+    text-shadow: -1px -1px 0px white;
 }
 body.active div#Description{
-    color: #CF9EAC
+    color: #BDA5AB;
+    text-shadow: -1px -1px 0px white;
 }
 body.active div#Credit1{
     color: darkgray;
